@@ -35,4 +35,10 @@ public class Task {
         this.status = status;
         this.updatedAt = Instant.now();
     }
+    public String toString(){
+        return "Task{id=" + id +
+                ", status='" + status + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

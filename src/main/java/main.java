@@ -1,9 +1,10 @@
 import java.util.*;
 import java.time.*;
 void main(){
-    ArrayList<String> tasks = new ArrayList<>();
+    ArrayList<Task> tasks = new ArrayList<>();
     Scanner input = new Scanner(System.in);
     int choice;
+    int idCount = 0;
     do{
         System.out.println("Task Tracker");
         System.out.println("1. Enter new tasks");
@@ -15,20 +16,17 @@ void main(){
         System.out.println("7. Exit Program");
         System.out.println("Enter a choice(1-7): ");
         choice = input.nextInt();
-
+        input.nextLine();
         if(choice == 1){
-            System.out.println("How many tasks would you like to enter?");
-            int numTasks = input.nextInt();
-            for(int i = 0; i <= numTasks; i++){
-                System.out.println("Enter task: ");
-                String task = input.next();
+                String status = "";
+                String description = "";
+                System.out.println("Enter description for task: ");
+                description = input.nextLine();
+                idCount++;
+                Task task = new Task(idCount ,"to-do", description);
+                task.setDescription(description);
                 tasks.add(task);
-
+                System.out.println(tasks);
             }
-            System.out.println(tasks);
-        }
-        if (choice == 2){
-
-        }
     }while(choice != 7);
 }
