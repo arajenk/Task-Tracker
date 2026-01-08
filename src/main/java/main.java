@@ -1,7 +1,6 @@
 import java.util.*;
 import java.time.*;
 void main(){
-    // Use arraylist to store each task
     ArrayList<String> tasks = new ArrayList<>();
     Scanner input = new Scanner(System.in);
     int choice;
