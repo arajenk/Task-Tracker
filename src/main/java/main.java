@@ -39,6 +39,14 @@ void main(){
                 }
             }
         }
+        if(choice==3){
+            System.out.println("Select a task number to delete: ");
+            int deleteIndex = input.nextInt();
+            input.nextLine();
+            if(deleteIndex >= 1 && deleteIndex <= tasks.size()){
+                tasks.remove(deleteIndex-1);
+            }
+        }
 
     }while(choice != 7);
 }
