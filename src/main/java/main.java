@@ -76,7 +76,9 @@ void main(){
             else {
                 System.out.println("Tasks: ");
                 for (Task task : tasks) {
-                    System.out.println("ID: " + task.getId() + ", Description: " + task.getDescription() + ", Status: " + task.getStatus());
+                    System.out.println("ID: " + task.getId() +
+                            ", Description: " + task.getDescription() +
+                            ", Status: " + task.getStatus());
                 }
             }
         }
