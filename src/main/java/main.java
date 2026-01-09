@@ -18,15 +18,27 @@ void main(){
         choice = input.nextInt();
         input.nextLine();
         if(choice == 1){
-                String status = "";
-                String description = "";
-                System.out.println("Enter description for task: ");
-                description = input.nextLine();
-                idCount++;
-                Task task = new Task(idCount ,"to-do", description);
-                task.setDescription(description);
-                tasks.add(task);
-                System.out.println(tasks);
+            System.out.println("Enter description for task: ");
+            String description = input.nextLine();
+            idCount++;
+            Task task = new Task(idCount ,"to-do", description);
+            task.setDescription(description);
+            tasks.add(task);
+            System.out.println("Successfully added task! (ID: "+ idCount + ")");
+            System.out.println(tasks);
             }
+        if(choice == 2){
+            System.out.println("Select a task to update: ");
+            int updateTaskId = input.nextInt();
+            input.nextLine();
+            for(Task task : tasks){
+                if(task.getId() == updateTaskId){
+                    System.out.println("Enter the new description: ");
+                    String description = input.nextLine();
+                    task.setDescription(description);
+                }
+            }
+        }
+
     }while(choice != 7);
 }
