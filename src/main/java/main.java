@@ -25,7 +25,6 @@ void main(){
             task.setDescription(description);
             tasks.add(task);
             System.out.println("Successfully added task! (ID: "+ idCount + ")");
-            System.out.println(tasks);
             }
         if(choice == 2){
             System.out.println("Select a task to update: ");
