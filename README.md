@@ -15,6 +15,9 @@ Each task includes:
 - `id` – unique task ID
 - `description` – task details
 - `status` – current state
+- `createdAt` – when the task was created
+- `updatedAt` – last time the task was updated
+
 
 ## How to Run
 
