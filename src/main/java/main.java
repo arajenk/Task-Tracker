@@ -78,7 +78,7 @@ void main(){
                 for (Task task : tasks) {
                     System.out.println("ID: " + task.getId() +
                             ", Description: " + task.getDescription() +
-                            ", Status: " + task.getStatus());
+                            ", Status: " + task.getStatus() + ", Created: " + task.getCreatedAt() + "Last Updated: " + task.getUpdatedAt());
                 }
             }
         }
