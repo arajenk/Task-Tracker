@@ -48,14 +48,3 @@ Timestamps are handled using Java’s `Instant` class.
 - Task IDs are generated based on existing tasks to avoid collisions
 
 ---
-
-## Example Menu
-
-Task Tracker
-1. Enter new task
-2. Update a task
-3. Delete a task
-4. Mark a task in-progress
-5. Mark a task completed
-6. List all tasks
-7. Exit Program
