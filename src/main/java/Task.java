@@ -5,12 +5,15 @@ public class Task {
     private String status;
     private final Instant createdAt;
     private Instant updatedAt;
-    public Task(int id, String status, String description){
+    public Task(int id, String status, String description, Instant createdAt, Instant updatedAt){
         this.id = id;
         this.description = description;
         this.status = status;
-        this.createdAt = Instant.now();
-        this.updatedAt = Instant.now();
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+    public Task(int id, String description, String status) {
+        this(id, status, description, Instant.now(), Instant.now());
     }
     public Instant getCreatedAt(){
         return createdAt;
