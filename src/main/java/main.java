@@ -115,6 +115,5 @@ public class main {
 
         TaskStorage.saveTasks(tasks);
         System.out.println("Goodbye!");
-        input.close();
     }
 }
