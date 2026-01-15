@@ -48,5 +48,3 @@ Timestamps are handled using Java’s `Instant` class.
 - Task IDs are generated based on existing tasks to avoid collisions
 
 ---
-
-https://roadmap.sh/projects/task-tracker
